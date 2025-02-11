@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Gallery</title>
+    <title>Advanced Animated Image Gallery</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            background: #f0f0f0;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
             padding: 20px;
         }
         .gallery {
@@ -16,6 +16,7 @@
             flex-wrap: wrap;
             justify-content: center;
             gap: 15px;
+            margin-top: 20px;
         }
         .gallery img {
             width: 200px;
@@ -32,7 +33,7 @@
         }
         button {
             margin: 10px;
-            padding: 10px 20px;
+            padding: 12px 24px;
             border: none;
             border-radius: 5px;
             background: #007BFF;
@@ -54,10 +55,19 @@
         .home-link:hover {
             text-decoration: underline;
         }
+        .fun-fact {
+            font-size: 18px;
+            margin-top: 20px;
+            padding: 10px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
-    <h1>Image Gallery</h1>
+    <h1>Advanced Animated Image Gallery</h1>
+    <p class="fun-fact">Did you know? The first digital camera was invented in 1975 and weighed 8 pounds!</p>
     <button onclick="shuffleImages()">Shuffle Images</button>
     <button onclick="toggleOpacity()">Toggle Opacity</button>
     <button onclick="addImage()">Add Image</button>
